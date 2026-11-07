@@ -1,0 +1,7 @@
+node_modules/
+dist/
+artifacts/
+.local/
+docs/*.ttt.md
+*.log
+.DS_Store

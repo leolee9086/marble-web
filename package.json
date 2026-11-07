@@ -1,0 +1,27 @@
+{
+  "name": "marble-web",
+  "version": "0.1.0",
+  "description": "Local WebGPU seamless marble and mineral-vein material generator",
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "author": "leolee9086 and 织",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 8150 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 8150 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser": "tsx scripts/verify-browser.ts"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.10.0",
+    "@webgpu/types": "^0.1.64",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1"
+  }
+}
